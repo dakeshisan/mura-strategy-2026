@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ATAMŪRA — автоматизации по направлениям (карта 19 направлений)</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0D0F12;--bg2:#14171c;--card:#191d23;--cyan:#00D4D4;--cyan2:#009898;--gold:#C9A84C;--text:#E8EDF2;--muted:#8A9BB0;--red:#E0584F;--green:#3FB97A;--blue:#5b86b3;--line:#252a31}
+body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,Arial,sans-serif;padding:34px 40px 80px;line-height:1.5}
+.wrap{max-width:1320px;margin:0 auto}
+.logo{font-size:11px;font-weight:700;letter-spacing:.22em;color:var(--cyan);text-transform:uppercase}
+.h1{font-size:32px;font-weight:800;letter-spacing:-.5px;margin-top:8px}
+.sub{color:var(--muted);font-size:15px;margin-top:8px;max-width:1040px}
+.rule{width:60px;height:3px;background:var(--cyan);margin:20px 0}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12px;color:var(--muted);margin:12px 0 4px}
+.legend .lg{display:flex;align-items:center;gap:6px}
+.dot{width:10px;height:10px;border-radius:3px;display:inline-block}
+h2.pool{font-size:14px;font-weight:800;letter-spacing:.04em;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--cyan)}
+h2.pool.rev{border-color:var(--green)} h2.pool.con{border-color:var(--gold)} h2.pool.bo{border-color:var(--blue)}
+h2.pool small{font-weight:500;color:var(--muted);font-size:12px;letter-spacing:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:1000px){.grid{grid-template-columns:1fr 1fr}}
+.dir{background:var(--bg2);border:1px solid var(--line);border-radius:13px;padding:16px 18px;display:flex;flex-direction:column}
+.dir.rev{border-top:3px solid var(--green)} .dir.con{border-top:3px solid var(--gold)} .dir.bo{border-top:3px solid var(--blue)}
+.dir .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.dir .nm{font-size:16px;font-weight:800;line-height:1.15}
+.dir .num{font-size:11px;color:var(--muted);font-weight:700}
+.dir .meta{font-size:11px;color:var(--muted);margin-top:5px;display:flex;gap:8px;flex-wrap:wrap}
+.tag{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;border-radius:5px}
+.t-w0{background:rgba(0,212,212,.15);color:var(--cyan)} .t-w1{background:rgba(201,168,76,.15);color:var(--gold)} .t-w2{background:rgba(91,134,179,.18);color:#9fc0e0}
+.t-rev{background:rgba(63,185,122,.15);color:var(--green)} .t-hz{background:rgba(138,155,176,.16);color:var(--muted)} .t-prof{background:rgba(201,168,76,.15);color:var(--gold)} .t-bo{background:rgba(91,134,179,.16);color:#9fc0e0}
+.dir .flag{font-size:12px;color:#c7d0db;margin-top:11px;line-height:1.45}
+.dir .flag b{color:var(--text)}
+.dir .autos{margin-top:11px;display:flex;flex-wrap:wrap;gap:5px}
+.chip{font-size:11px;padding:2px 8px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--text);white-space:nowrap}
+.chip .s{font-size:9px;font-weight:700;margin-left:4px;padding:0 4px;border-radius:4px}
+.s-live{background:rgba(0,212,212,.2);color:var(--cyan)} .s-wip{background:rgba(201,168,76,.2);color:var(--gold)} .s-dsn{background:rgba(138,155,176,.2);color:var(--muted)} .s-idea{background:rgba(91,134,179,.18);color:#9fc0e0} .s-none{background:rgba(224,88,79,.16);color:#f0b9b4}
+.foot{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.6}
+.note{font-size:12.5px;color:var(--muted);margin-top:8px;line-height:1.55}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">ATAMŪRA GROUP · карта автоматизаций</div>
+  <div class="h1">Автоматизации по направлениям</div>
+  <div class="sub">Все направления компании × флагманский AI-кейс × конкретные автоматизации × приоритет под стратегию 2026. Объединяет 18 направлений AI-native матрицы и реальные подразделения (снабжение, СБ, HR). Волна 0 — фундамент/быстрые победы, 1 — двигатель выручки, 2 — стройка/себестоимость.</div>
+  <div class="rule"></div>
+  <div class="legend">
+    <span class="lg"><span class="dot" style="background:var(--green)"></span>Двигатель выручки</span>
+    <span class="lg"><span class="dot" style="background:var(--gold)"></span>Стройка и поставка</span>
+    <span class="lg"><span class="dot" style="background:var(--blue)"></span>Управление / бэк-офис</span>
+    <span class="lg">·</span>
+    <span class="lg"><span class="tag t-rev">выручка-2026</span></span>
+    <span class="lg"><span class="tag t-hz">горизонт</span></span>
+    <span class="lg"><span class="tag t-prof">прибыль-защита</span></span>
+    <span class="lg"><span class="tag t-bo">бэк-офис</span></span>
+    <span class="lg">· статусы: <span class="chip">бот<span class="s s-live">работает</span></span> <span class="chip">x<span class="s s-wip">в работе</span></span> <span class="chip">x<span class="s s-dsn">дизайн</span></span> <span class="chip">x<span class="s s-idea">идея</span></span></span>
+  </div>
+
+  <h2 class="pool rev">Двигатель выручки <small>· 9 направлений · здесь берётся план 40 млрд</small></h2>
+  <div class="grid">
+
+    <div class="dir rev"><div class="top"><div class="nm">Продажи</div><div class="num">01</div></div>
+      <div class="meta"><span class="tag t-w0">Волна 0</span><span class="tag t-rev">выручка-2026</span><span>Impact 5</span></div>
+      <div class="flag"><b>Кейс:</b> post-call AI — авто-замер КЭВ и качества по каждому звонку (звонок→показ→сделка).</div>
+      <div class="autos"><span class="chip">SDR-copilot<span class="s s-dsn">дизайн</span></span><span class="chip">STT+КЭВ-аудит<span class="s s-live">работает</span></span><span class="chip">Генератор оферов<span class="s s-dsn">дизайн</span></span><span class="chip">Реанимация отказников<span class="s s-idea">идея</span></span><span class="chip">Anti-no-show<span class="s s-idea">идея</span></span></div>
+    </div>
+
+    <div class="dir rev"><div class="top"><div class="nm">Телемаркетинг</div><div class="num">02</div></div>
+      <div class="meta"><span class="tag t-w0">Волна 0</span><span class="tag t-rev">выручка-2026</span><span>Impact 5</span></div>
+      <div class="flag"><b>Кейс:</b> авто-скоринг 100% звонков с КЭВ-метрикой в Bitrix24.</div>
+      <div class="autos"><span class="chip">SDR-copilot<span class="s s-dsn">дизайн</span></span><span class="chip">Реанимация спящих лидов<span class="s s-idea">идея</span></span><span class="chip">Лидген-монитор<span class="s s-none">№0 сделать</span></span><span class="chip">STT+КЭВ<span class="s s-live">работает</span></span></div>
+    </div>
+
+    <div class="dir rev"><div class="top"><div class="nm">Маркетинг (perf)</div><div class="num">03</div></div>
+      <div class="meta"><span class="tag t-w1">Волна 1</span><span class="tag t-hz">горизонт</span><span>Impact 5</span></div>
+      <div class="flag"><b>Кейс:</b> ASR-разбор звонков → банк реальных формулировок для креативов; closed-loop по прибыли.</div>
+      <div class="autos"><span class="chip">Сквозная атрибуция<span class="s s-idea">идея</span></span><span class="chip">Банк инсайтов из STT<span class="s s-wip">в работе</span></span></div>
+    </div>
+
+    <div class="dir rev"><div class="top"><div class="nm">СММ / контент</div><div class="num">04</div></div>
+      <div class="meta"><span class="tag t-w0">Волна 0</span><span class="tag t-hz">горизонт</span><span>Impact 4</span></div>
+      <div class="flag"><b>Кейс:</b> контент-конвейер из стройки — UGC прорабов/подрядчиков из Telegram.</div>
+      <div class="autos"><span class="chip">СММ авто-контент<span class="s s-wip">частично</span></span></div>
+    </div>
+
+    <div class="dir rev"><div class="top"><div class="nm">Постпродажи</div><div class="num">05</div></div>
+      <div class="meta"><span class="tag t-w1">Волна 1</span><span class="tag t-hz">горизонт</span><span>Impact 5</span></div>
+      <div class="flag"><b>Кейс:</b> AI-сбор оплат рассрочки + раннее предсказание просрочки.</div>
+      <div class="autos"><span class="chip">Murahome (жители)<span class="s s-wip">alpha</span></span><span class="chip">AI-сбор рассрочки<span class="s s-idea">идея</span></span></div>
+    </div>
+
+    <div class="dir rev"><div class="top"><div class="nm">Сайты-конвертер</div><div class="num">06</div></div>
+      <div class="meta"><span class="tag t-w1">Волна 1</span><span class="tag t-hz">горизонт</span><span>Impact 5</span></div>
+      <div class="flag"><b>Кейс:</b> авто-каталог квартир с AI-описаниями из Profitbase (шахматка с ценами).</div>
+      <div class="autos"><span class="chip">Сайты-конвертер<span class="s s-idea">идея</span></span><span class="chip">Profitbase-клон<span class="s s-dsn">дизайн</span></span></div>
+    </div>
+
+    <div class="dir rev"><div class="top"><div class="nm">Доп.продажи УК</div><div class="num">07</div></div>
+      <div class="meta"><span class="tag t-w1">Волна 1</span><span class="tag t-hz">горизонт</span><span>Impact 4</span></div>
+      <div class="flag"><b>Кейс:</b> контекстный апселл допуслуг на закрытии тикета + по life-event сигналам.</div>
+      <div class="autos"><span class="chip">Апселл УК<span class="s s-idea">идея</span></span><span class="chip">Murahome<span class="s s-wip">alpha</span></span></div>
+    </div>
+
+    <div class="dir rev"><div class="top"><div class="nm">Запуск проектов</div><div class="num">08</div></div>
+      <div class="meta"><span class="tag t-w1">Волна 1</span><span class="tag t-rev">выручка-2026</span><span>Impact 5</span></div>
+      <div class="flag"><b>Кейс:</b> динамическая модель рынка и стартовой цены (ошибка цены необратима на весь sell-out).</div>
+      <div class="autos"><span class="chip">Krisha ценообразование<span class="s s-live">работает</span></span><span class="chip">Profitbase-движок<span class="s s-dsn">дизайн</span></span></div>
+    </div>
+
+    <div class="dir rev"><div class="top"><div class="nm">Покупка участков</div><div class="num">09</div></div>
+      <div class="meta"><span class="tag t-w1">Волна 1</span><span class="tag t-prof">прибыль-защита</span><span>Impact 5</span></div>
+      <div class="flag"><b>Кейс:</b> авто-DD юр.чистоты участка (Land DD agent): adata.kz + кадастр + LLM.</div>
+      <div class="autos"><span class="chip">Land-DD agent<span class="s s-idea">идея</span></span></div>
+    </div>
+  </div>
+
+  <h2 class="pool con">Стройка и поставка <small>· 5 направлений · защита себестоимости и риска</small></h2>
+  <div class="grid">
+
+    <div class="dir con"><div class="top"><div class="nm">Строительство</div><div class="num">10</div></div>
+      <div class="meta"><span class="tag t-w2">Волна 2</span><span class="tag t-prof">прибыль-защита</span><span>Impact 5</span></div>
+      <div class="flag"><b>Кейс:</b> сверка КС-2/КС-3 ↔ договорная смета ↔ проект (КЖ) — детектор приписок объёмов.</div>
+      <div class="autos"><span class="chip">Сверка СМР / Смета<span class="s s-wip">в работе</span></span><span class="chip">Anomaly-детектор<span class="s s-wip">MVP</span></span><span class="chip">QC-приёмка ЖК<span class="s s-idea">идея</span></span><span class="chip">Robocop (труд)<span class="s s-wip">в работе</span></span></div>
+    </div>
+
+    <div class="dir con"><div class="top"><div class="nm">Производство</div><div class="num">11</div></div>
+      <div class="meta"><span class="tag t-w2">Волна 2</span><span class="tag t-prof">прибыль-защита</span><span>Impact 5</span></div>
+      <div class="flag"><b>Кейс:</b> план-факт расхода материалов (смета ↔ выдача со склада ↔ M-29).</div>
+      <div class="autos"><span class="chip">Anomaly-детектор<span class="s s-wip">MVP</span></span><span class="chip">Keeper (склад)<span class="s s-live">работает</span></span></div>
+    </div>
+
+    <div class="dir con"><div class="top"><div class="nm">Снабжение и склад</div><div class="num">12</div></div>
+      <div class="meta"><span class="tag t-w0">Волна 0–2</span><span class="tag t-prof">прибыль-защита</span><span>+ к матрице</span></div>
+      <div class="flag"><b>Кейс:</b> контроль закупочных цен по эталону + тендеры КП + складская дисциплина.</div>
+      <div class="autos"><span class="chip">Muravey (цены)<span class="s s-wip">в работе</span></span><span class="chip">Batman (тендеры)<span class="s s-none">остановлен</span></span><span class="chip">Keeper (склад)<span class="s s-live">работает</span></span><span class="chip">Rambo (приёмка)<span class="s s-live">работает</span></span></div>
+    </div>
+
+    <div class="dir con"><div class="top"><div class="nm">Управление техникой</div><div class="num">13</div></div>
+      <div class="meta"><span class="tag t-w2">Волна 2</span><span class="tag t-prof">прибыль-защита</span><span>Impact 4</span></div>
+      <div class="flag"><b>Кейс:</b> детектор злоупотреблений ГСМ/рейсами: чеки/литры + моточасы + GPS (~21 млн ₸/год).</div>
+      <div class="autos"><span class="chip">Детектор ГСМ<span class="s s-idea">идея</span></span><span class="chip">Ford (техника/рабочие)<span class="s s-live">работает</span></span></div>
+    </div>
+
+    <div class="dir con"><div class="top"><div class="nm">Документация и графики</div><div class="num">14</div></div>
+      <div class="meta"><span class="tag t-w2">Волна 2</span><span class="tag t-bo">бэк-офис</span><span>Impact 4</span></div>
+      <div class="flag"><b>Кейс:</b> авто-сверка факта со сроком: голосовой отчёт прораба рус/каз → транскрипт → график.</div>
+      <div class="autos"><span class="chip">Авто-сверка сроков<span class="s s-idea">идея</span></span><span class="chip">Daily Report bot<span class="s s-live">работает</span></span><span class="chip">Oracle (intake)<span class="s s-live">работает</span></span><span class="chip">Taskbot<span class="s s-live">работает</span></span></div>
+    </div>
+  </div>
+
+  <h2 class="pool bo">Управление компанией / бэк-офис <small>· 5 направлений · риск, скорость, эффективность</small></h2>
+  <div class="grid">
+
+    <div class="dir bo"><div class="top"><div class="nm">Юристы</div><div class="num">15</div></div>
+      <div class="meta"><span class="tag t-w0">Волна 0</span><span class="tag t-prof">прибыль-защита</span><span>Impact 5</span></div>
+      <div class="flag"><b>Кейс:</b> контур проверки контрагента (Due Diligence Agent) перед договором/авансом.</div>
+      <div class="autos"><span class="chip">DD контрагента (Adata)<span class="s s-wip">в работе</span></span><span class="chip">Договоры bot<span class="s s-live">работает</span></span></div>
+    </div>
+
+    <div class="dir bo"><div class="top"><div class="nm">Бухгалтерия</div><div class="num">16</div></div>
+      <div class="meta"><span class="tag t-w0">Волна 0</span><span class="tag t-prof">прибыль-защита</span><span>Impact 5</span></div>
+      <div class="flag"><b>Кейс:</b> AP-первичка — авто-извлечение счёта/АВР/накладной из Telegram/Bitrix.</div>
+      <div class="autos"><span class="chip">AP-первичка<span class="s s-idea">идея</span></span></div>
+    </div>
+
+    <div class="dir bo"><div class="top"><div class="nm">Казначейство</div><div class="num">17</div></div>
+      <div class="meta"><span class="tag t-w0">Волна 0</span><span class="tag t-prof">прибыль-защита</span><span>Impact 5</span></div>
+      <div class="flag"><b>Кейс:</b> прогноз ликвидности 13 недель (rolling cash-flow): притоки эскроу ↔ план закупа.</div>
+      <div class="autos"><span class="chip">Cash-flow 13 недель<span class="s s-idea">идея</span></span></div>
+    </div>
+
+    <div class="dir bo"><div class="top"><div class="nm">Финконтроль / СБ</div><div class="num">18</div></div>
+      <div class="meta"><span class="tag t-w0">Волна 0</span><span class="tag t-prof">прибыль-защита</span><span>+ к матрице</span></div>
+      <div class="flag"><b>Кейс:</b> аудит платежей перед оплатой (двойные/фиктивные) + линия доверия по нарушениям.</div>
+      <div class="autos"><span class="chip">Sherlock (аудит платежей)<span class="s s-wip">прототип</span></span><span class="chip">Integrity (линия доверия)<span class="s s-none">не активен</span></span></div>
+    </div>
+
+    <div class="dir bo"><div class="top"><div class="nm">Штаб: управление · портал · HR</div><div class="num">19</div></div>
+      <div class="meta"><span class="tag t-w0">Волна 0</span><span class="tag t-bo">бэк-офис</span><span>Impact 4</span></div>
+      <div class="flag"><b>Кейс:</b> утренний управленческий дайджест (Executive Brief) + AI-ассистент по базе знаний (RAG) + учёт времени.</div>
+      <div class="autos"><span class="chip">Executive Brief<span class="s s-wip">частично</span></span><span class="chip">Корп.портал (Mini App)<span class="s s-dsn">дизайн</span></span><span class="chip">Cronos (учёт времени)<span class="s s-wip">в работе</span></span><span class="chip">Aristotle (обучение)<span class="s s-dsn">контент</span></span><span class="chip">HR-скрининг<span class="s s-live">работает</span></span></div>
+    </div>
+  </div>
+
+  <div class="note"><b>Как читать приоритет:</b> наверху (Двигатель выручки) — то, что берёт план 40 млрд в этом году; рычаги конверсии воронки (Продажи, Телемаркетинг) и цена (Запуск проектов) помечены «выручка-2026». Стройка и бэк-офис — «прибыль-защита»: не двигают выручку года, но держат себестоимость и риск. Полная приоритизация со скорами 2×Выручка+Прибыль — в xlsx «atamura_automation_priority_2026».</div>
+
+  <div class="foot">ATAMŪRA GROUP · «Мы создаём наследие» · карта автоматизаций по 19 направлениям · 2026-06-01 · конфиденциально (внутренний документ). Источники: AI-native матрица 18 направлений + org-registry + приоритизация автоматизаций сессии.</div>
+</div>
+</body>
+</html>
