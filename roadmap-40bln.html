@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<title>ATAMŪRA — Путь к 40 млрд ₸ · 2026</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--bg-dark:#0D0F12;--bg-darker:#070809;--bg-light:#FFFFFF;--bg-offwhite:#F5F7F9;
+--cyan:#00D4D4;--cyan-dim:#009898;--text-light:#FFFFFF;--text-dark:#0D0F12;
+--text-muted:#8A9BB0;--gold:#C9A84C;--red:#E0584F;--green:#3FB97A}
+body{background:#1a1a1a;font-family:'Inter','Helvetica Neue',Arial,sans-serif}
+.deck{width:1280px;margin:0 auto}
+.slide{width:1280px;height:720px;position:relative;overflow:hidden;display:none;flex-direction:column}
+.slide.active{display:flex}
+.pad{padding:60px 76px}
+.slide-logo{position:absolute;top:28px;left:48px;font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--cyan);text-transform:uppercase}
+.slide-num{position:absolute;bottom:24px;right:48px;font-size:12px;color:var(--text-muted)}
+.nav{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);display:flex;gap:16px;align-items:center;background:rgba(0,0,0,.7);padding:10px 20px;border-radius:40px;border:1px solid rgba(255,255,255,.1);z-index:100}
+.nav button{background:none;border:1px solid var(--cyan);color:var(--cyan);padding:6px 18px;border-radius:4px;cursor:pointer;font-size:14px}
+.nav button:hover{background:var(--cyan);color:#000}
+.nav .counter{color:#fff;font-size:13px;min-width:60px;text-align:center}
+.dark{background:var(--bg-dark);color:var(--text-light)}
+.light{background:var(--bg-light);color:var(--text-dark)}
+.offwhite{background:var(--bg-offwhite);color:var(--text-dark)}
+.tag{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--cyan);margin-bottom:16px}
+.tag.gold{color:var(--gold)}
+.h-display{font-size:84px;font-weight:900;line-height:.95}
+.h-title{font-size:44px;font-weight:800;line-height:1.08}
+.h-sub{font-size:21px;font-weight:400;color:var(--text-muted);line-height:1.5}
+.cyan-rule{width:64px;height:3px;background:var(--cyan);margin:20px 0}
+.asterisk{font-size:130px;color:var(--cyan);font-weight:900;line-height:1;position:absolute}
+.muted{color:var(--text-muted)}.cy{color:var(--cyan)}.gd{color:var(--gold)}.b{font-weight:700}
+p.body{font-size:19px;line-height:1.6;color:#2a2f36}
+.dark p.body{color:#c7d0db}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.kpi .num{font-size:60px;font-weight:900;color:var(--cyan);line-height:1}
+.kpi .num.gold{color:var(--gold)}.kpi .num.white{color:#fff}
+.kpi .lab{font-size:15px;color:var(--text-muted);margin-top:10px;line-height:1.4}
+.card{background:#14171c;border-radius:12px;padding:24px 26px;border-left:3px solid var(--cyan)}
+.light .card{background:var(--bg-offwhite)}
+table.t{width:100%;border-collapse:collapse;font-size:15px}
+table.t th{background:#0D0F12;color:#fff;text-align:left;padding:11px 16px;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+table.t td{padding:13px 16px;border-bottom:1px solid #e7ebef;vertical-align:top;line-height:1.4}
+table.t tr:nth-child(even) td{background:#f7f9fb}
+.pill{display:inline-block;padding:3px 11px;border-radius:20px;font-size:12px;font-weight:700}
+.pill.cy{background:rgba(0,212,212,.15);color:var(--cyan-dim)}
+.pill.gd{background:rgba(201,168,76,.18);color:#8a7325}
+/* waterfall */
+.wf{display:flex;align-items:flex-end;gap:36px;height:300px;padding:0 30px;position:relative;margin-top:40px}
+.wf .col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.wf .bar{width:130px;border-radius:6px 6px 0 0;position:relative}
+.wf .spacer{width:130px}
+.wf .barval{position:absolute;top:-32px;left:0;right:0;text-align:center;font-size:23px;font-weight:900}
+.wflabels{display:flex;gap:36px;padding:16px 30px 0}
+.wflabels .lab{flex:1;text-align:center;font-size:14px;color:#44515e;line-height:1.3;font-weight:700}
+.wflabels .sub{font-size:12px;color:#8A9BB0;font-weight:400;display:block;margin-top:3px}
+.ceiling{position:absolute;left:30px;right:30px;border-top:2px dashed var(--gold)}
+.ceiling .ctxt{position:absolute;right:0;top:-20px;font-size:13px;font-weight:700;color:#8a7325}
+.risk{display:flex;gap:16px;margin-bottom:18px;align-items:flex-start}
+.risk .ic{font-size:22px;line-height:1;margin-top:2px}
+.risk .rt{font-size:18px;font-weight:700;margin-bottom:3px}
+.risk .rd{font-size:14.5px;color:#c7d0db;line-height:1.45}
+.flagbox{background:rgba(201,168,76,.12);border-left:3px solid var(--gold);padding:18px 22px;border-radius:8px;font-size:17px;line-height:1.5}
+@media print{body{background:#fff}.nav{display:none}.slide{display:flex!important;page-break-after:always}}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<!-- 1. COVER -->
+<section class="slide dark active pad" style="justify-content:center">
+  <div class="slide-logo">ATAMŪRA GROUP</div>
+  <div class="asterisk" style="top:90px;right:90px">∗</div>
+  <div class="tag">Стратегия продаж · план до конца года</div>
+  <div class="h-display">Путь к<br><span class="cy">40 млрд ₸</span></div>
+  <div class="cyan-rule"></div>
+  <div class="h-sub" style="max-width:720px">Выручка от продаж 2026 — что реально складывается в цель и какие рычаги её закрывают.</div>
+  <div style="position:absolute;bottom:54px;left:76px;font-size:13px;color:var(--text-muted)">ATAMŪRA GROUP · «Мы создаём наследие» · для совета · v1 · 2026-06-01</div>
+  <div class="slide-num">1 / 6</div>
+</section>
+
+<!-- 2. ГДЕ МЫ -->
+<section class="slide dark pad" style="justify-content:center">
+  <div class="slide-logo">ATAMŪRA</div>
+  <div class="tag">Точка отсчёта</div>
+  <div class="h-title" style="margin-bottom:46px">Цель — почти удвоение лучшего года</div>
+  <div class="grid3">
+    <div class="kpi"><div class="num white">6,2</div><div class="lab">Факт продаж 2026<br>(янв–май, млрд ₸)</div></div>
+    <div class="kpi"><div class="num">25,5</div><div class="lab">Лучший год — 2025<br>(млрд ₸, факт)</div></div>
+    <div class="kpi"><div class="num gold">40</div><div class="lab">Цель 2026<br>(млрд ₸)</div></div>
+  </div>
+  <div class="cyan-rule" style="margin-top:48px"></div>
+  <p class="body" style="max-width:980px">Цель 40 млрд = <span class="b cy">+57% к рекордному 2025</span>. Внутри 2026 темп пока нисходящий (янв 1,7 → май 0,7 млрд), а в мае просел лидген. Цель достижима, но не на инерции — её собирают три независимых блока (след. слайд).</p>
+  <div class="slide-num">2 / 6</div>
+</section>
+
+<!-- 3. WATERFALL -->
+<section class="slide light pad">
+  <div class="slide-logo" style="color:var(--cyan-dim)">ATAMŪRA</div>
+  <div class="tag" style="color:var(--cyan-dim)">Как собирается 40 млрд</div>
+  <div class="h-title" style="margin-bottom:6px">Мост к цели: план + акимат + разгон</div>
+  <p class="body" style="font-size:15px;margin-bottom:8px">Все суммы — млрд ₸, выручка от продаж за весь 2026 (факт + план на остаток года).</p>
+  <div class="wf">
+    <div class="ceiling" style="bottom:288px"><span class="ctxt">Потолок при идеальном исполнении (плюс-сценарий + акимат) — 48</span></div>
+    <div class="col"><div class="bar" style="height:168px;background:linear-gradient(180deg,#1b6f86,#0D2B45)"><span class="barval" style="color:#0D2B45">28</span></div></div>
+    <div class="col"><div class="bar" style="height:42px;background:var(--gold)"><span class="barval gd">+7</span></div><div class="spacer" style="height:168px"></div></div>
+    <div class="col"><div class="bar" style="height:30px;background:var(--cyan)"><span class="barval" style="color:var(--cyan-dim)">+5</span></div><div class="spacer" style="height:210px"></div></div>
+    <div class="col"><div class="bar" style="height:240px;background:linear-gradient(180deg,#00D4D4,#009898)"><span class="barval" style="color:var(--cyan-dim)">40</span></div></div>
+  </div>
+  <div class="wflabels">
+    <div class="lab">Минус-сценарий плана<span class="sub">факт + консервативный план</span></div>
+    <div class="lab">Продажа акимату<span class="sub">B2G-контракт сверху</span></div>
+    <div class="lab">Разгон продаж<span class="sub">≈40% пути к плюс-сценарию</span></div>
+    <div class="lab" style="color:#0D2B45;font-weight:800">ЦЕЛЬ 2026<span class="sub">собрано</span></div>
+  </div>
+  <div class="slide-num">3 / 6</div>
+</section>
+
+<!-- 4. РЫЧАГИ -->
+<section class="slide light pad">
+  <div class="slide-logo" style="color:var(--cyan-dim)">ATAMŪRA</div>
+  <div class="tag" style="color:var(--cyan-dim)">План действий</div>
+  <div class="h-title" style="margin-bottom:24px">Четыре рычага и кто за них отвечает</div>
+  <table class="t">
+    <thead><tr><th style="width:30px">#</th><th>Рычаг</th><th style="width:120px">Вклад</th><th style="width:200px">Владелец</th><th style="width:150px">Срок</th></tr></thead>
+    <tbody>
+      <tr><td class="b">1</td><td><span class="b">Закрыть сделку с акиматом</span><br><span class="muted" style="font-size:13px">17,5% всей цели на одном контрагенте</span></td><td><span class="pill gd">+7 млрд</span></td><td>GR + Юристы</td><td>до Q4 (в этом году)</td></tr>
+      <tr><td class="b">2</td><td><span class="b">Запустить 5 новых проектов в срок</span><br><span class="muted" style="font-size:13px">Олимпик, Атмосфера 2, Amaia, Bravo, Дискавери — дают 0 до старта</span></td><td><span class="pill cy">база плана</span></td><td>Девелопмент + Маркетинг</td><td>старт июнь–июль</td></tr>
+      <tr><td class="b">3</td><td><span class="b">Разгон продаж (absorption)</span><br><span class="muted" style="font-size:13px">Конверсия встреча→сделка, лидген, SDR-помощник, реанимация спящих лидов</span></td><td><span class="pill cy">+5 млрд</span></td><td>Продажи + Маркетинг</td><td>весь H2, пик — осень</td></tr>
+      <tr><td class="b">4</td><td><span class="b">Удержать цену — не демпинговать</span><br><span class="muted" style="font-size:13px">Плюс-сценарий частично куплен скидкой 12–21% (Bravo, Аксай, Атмосфера)</span></td><td><span class="pill cy">маржа</span></td><td>Ценообразование + РОП</td><td>при каждом старте</td></tr>
+    </tbody>
+  </table>
+  <p class="body" style="font-size:14.5px;margin-top:18px;color:#5a626c">Рычаги 1 и 2 закрывают базу (35 млрд). Рычаг 3 добирает до 40. Рычаг 4 защищает прибыль внутри объёма.</p>
+  <div class="slide-num">4 / 6</div>
+</section>
+
+<!-- 5. РИСКИ -->
+<section class="slide dark pad">
+  <div class="slide-logo">ATAMŪRA</div>
+  <div class="tag" style="color:var(--red)">Что может сорвать цель</div>
+  <div class="h-title" style="margin-bottom:34px">Четыре риска под контроль</div>
+  <div class="risk"><div class="ic">🏛️</div><div><div class="rt">Акимат соскользнёт в 2027</div><div class="rd">B2G-цикл длинный (бюджет, согласования). Перенос = минус 7 млрд (17,5% цели), которые рознице за остаток года не добрать. <span class="cy">Нужен план Б.</span></div></div></div>
+  <div class="risk"><div class="ic">🔁</div><div><div class="rt">Двойной счёт акимата</div><div class="rd">Если акимат выкупает квартиры из проектов, уже заложенных в план (Дискавери, Bravo…), то это не «+7 сверху», а часть базы — тогда стартовая точка не 35, а 28. <span class="cy">Подтвердить до планирования.</span></div></div></div>
+  <div class="risk"><div class="ic">📉</div><div><div class="rt">Нисходящий тренд + провал лидгена</div><div class="rd">Внутри 2026 продажи падают, в мае телемаркетинг −84%. Если лидген не починить — под угрозой даже консервативные 28 млрд. <span class="cy">Чинить срочно.</span></div></div></div>
+  <div class="risk"><div class="ic">⚖️</div><div><div class="rt">Тоньше маржа и концентрация</div><div class="rd">7 млрд по акимату дадут меньше прибыли на тенге, чем розница; плюс зависимость 17,5% выручки от одного госконтрагента. Это про прибыль, не только про выручку.</div></div></div>
+  <div class="slide-num">5 / 6</div>
+</section>
+
+<!-- 6. РЕШИТЬ СЕЙЧАС -->
+<section class="slide dark pad" style="justify-content:center">
+  <div class="slide-logo">ATAMŪRA</div>
+  <div class="tag gold">Решения этой недели</div>
+  <div class="h-title" style="margin-bottom:30px">Что закрыть, чтобы цифра стала твёрдой</div>
+  <div class="flagbox" style="margin-bottom:26px">
+    <span class="b gd">Главный вопрос:</span> акимат на 7 млрд — это объём <span class="b">сверх</span> плана или <span class="b">из</span> уже учтённых проектов? От ответа зависит, наша база — 35 или 28 млрд.
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px">
+    <div class="card"><div class="b cy" style="font-size:16px;margin-bottom:6px">1 · Зафиксировать акимат</div><div style="font-size:14.5px;color:#c7d0db;line-height:1.45">Срок и бюджетное основание сделки до конца года + сценарий, если переносится.</div></div>
+    <div class="card"><div class="b cy" style="font-size:16px;margin-bottom:6px">2 · Починить лидген</div><div style="font-size:14.5px;color:#c7d0db;line-height:1.45">Разобрать майский провал −84% — артефакт или сломанный движок. Прямая утечка выручки.</div></div>
+    <div class="card"><div class="b cy" style="font-size:16px;margin-bottom:6px">3 · Готовность к осени</div><div style="font-size:14.5px;color:#c7d0db;line-height:1.45">Маркетинг и штат продаж масштабировать к августу под 5 одновременных стартов.</div></div>
+  </div>
+  <div class="cyan-rule" style="margin-top:34px"></div>
+  <p class="body" style="font-size:18px">Вывод: <span class="b cy">40 млрд достижимо</span> — но это управление тремя вещами (акимат · запуски · лидген), а не героика продаж.</p>
+  <div class="slide-num">6 / 6</div>
+</section>
+
+</div>
+
+<nav class="nav">
+  <button onclick="prev()">←</button>
+  <span class="counter" id="counter">1 / 6</span>
+  <button onclick="next()">→</button>
+</nav>
+
+<script>
+const slides=document.querySelectorAll('.slide');let cur=0;
+function show(n){slides[cur].classList.remove('active');cur=(n+slides.length)%slides.length;slides[cur].classList.add('active');document.getElementById('counter').textContent=`${cur+1} / ${slides.length}`;}
+function next(){show(cur+1)}function prev(){show(cur-1)}
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowDown')next();if(e.key==='ArrowLeft'||e.key==='ArrowUp')prev();});
+show(0);
+</script>
+</body>
+</html>
